@@ -12,7 +12,7 @@ public class DriverFactory {
     public static WebDriver initDriver() {
         if (tlDriver.get() == null) {
             System.setProperty("webdriver.chrome.driver",
-                    "D:\\batch 26\\adarsh\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+                    "chromedriver.exe");
 
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--start-maximized");  // open browser maximized
