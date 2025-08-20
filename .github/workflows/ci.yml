@@ -10,7 +10,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      HEADLESS: "true"
+      HEADLESS: "true"   # ✅ will trigger headless mode in DriverFactory
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -30,4 +30,4 @@ jobs:
             ${{ runner.os }}-m2-
 
       - name: Run tests (headless)
-        run: mvn -B -e -Dheadless=true clean test -DsuiteXmlFile=src/test/resources/testng.xml
+        run: mvn -B clean test -DsuiteXmlFile=src/test/resources/testng.xml
