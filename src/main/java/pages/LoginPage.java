@@ -12,10 +12,10 @@ public class LoginPage {
 
     // Locators (may change as site updates)
     private By loginButton = By.xpath("//div[text()='Login']");
-    private By emailField = By.xpath("//input[@type='email' or @data-testid='username-input']");
-    private By passwordField = By.xpath("//input[@type='password' or @data-testid='password-input']");
-    private By submitButton = By.xpath("//div[@data-testid='login-cta' or .//text()='LOGIN']");
-    private By profileBadge = By.xpath("//*[contains(@class,'profile') or @data-testid='user-profile-icon']");
+    private By emailField = By.xpath("//input[@type='email']");
+    private By passwordField = By.xpath("//input[@type='password']");
+    private By submitButton = By.xpath("//text()='LOGIN']");
+    private By profileBadge = By.xpath("//@data-testid='user-profile-icon']");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
