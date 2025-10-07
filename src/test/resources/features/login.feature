@@ -7,3 +7,4 @@ Feature: SpiceJet Login
     #And user enters email "test@example.com" and password "Password@123"
     #And user clicks login
     #Then user should be logged in successfully
+        #Then user should be logged in successfully
